@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team - Ethio Catalyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: url("photo42.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff9f0;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: rgba(111, 161, 80, 0.9); /* slight transparency to match essence */
+      color: #fff9f0;
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo-title img {
+      height: 180px;   /* Bigger logo exactly like essence.html */
+      width: auto;
+    }
+    header h1 {
+      font-size: 2.2rem; /* Bigger text to match essence.html */
+      font-weight: 700;
+    }
+    nav a {
+      color: #fff9f0;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem; /* Slightly larger nav text */
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #d6f0c0;
+      text-decoration: underline;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      color: #fff9f0;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    .member {
+      background-color: rgba(111, 161, 80, 0.8); /* Added transparency to match new background */
+      color: #fff9f0;
+      border-radius: 12px;
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid #fff9f0;
+      text-decoration: none;
+      display: block;
+    }
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 30px rgba(255, 249, 240, 0.2);
+      background-color: #fff9f0;
+      color: #6fa150;
+    }
+    .member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+    .member:hover img {
+      transform: scale(1.03);
+    }
+    .member h3 {
+      margin-bottom: 0.3rem;
+      font-size: 1.3rem; /* Slightly larger name */
+      font-weight: 700;
+    }
+    .member p {
+      font-size: 1.05rem; /* Slightly larger position text */
+      font-weight: 500;
+    }
+    footer {
+      background-color: rgba(111, 161, 80, 0.9); /* Added transparency to match header */
+      color: #fff9f0;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      font-weight: 600;
+      font-size: 1.1rem; /* Slightly larger footer text */
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      .logo-title {
+        margin-bottom: 1rem;
+      }
+      .logo-title img {
+        height: 120px; /* Still big on mobile like essence.html */
+      }
+      header h1 {
+        font-size: 1.8rem; /* Slightly larger on mobile */
+      }
+      nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      nav a {
+        margin: 0.5rem;
+        font-size: 1rem; /* Adjusted for mobile */
+      }
+      .section-title { 
+        font-size: 2rem; 
+        margin-bottom: 2rem;
+      }
+      .member img { 
+        height: 180px; 
+      }
+      .member h3 {
+        font-size: 1.2rem;
+      }
+      .member p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="img2.png" alt="Ethio Catalyst Logo">
+      <h1>Ethio Catalyst</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      
+      
+    </nav>
+  </header>
+  <section>
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-grid">
+      <a href="zelalem.html" class="member">
+        <img src="photo30.jpg" alt="Zelalem Girma" />
+        <h3>Zelalem Girma</h3>
+        <p>CEO & Founder</p>
+      </a>
+      <a href="zerubabel.html" class="member">
+        <img src="photo29.jpg" alt="Zerubabel Nahusenay" />
+        <h3>Zerubabel Nahusenay</h3>
+        <p>Assistant Manager</p>
+      </a>
+      <a href="aron.html" class="member">
+        <img src="photo28.jpg" alt="Aron Feseha" />
+        <h3>Aron Feseha</h3>
+        <p>Processing Director</p>
+      </a>
+      <a href="turunesh.html" class="member">
+        <img src="photo34.jpg" alt="Turunesh Ketema" />
+        <h3>Turunesh Ketema</h3>
+        <p>Lab Manager</p>
+      </a>
+      <a href="sumeredin.html" class="member">
+        <img src="photo33.jpg" alt="Sumeredin Dilwato" />
+        <h3>Sumeredin Dilwato</h3>
+        <p>Assistant Processing Director</p>
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Ethio Catalyst Coffee. All rights reserved.</p>
+  </footer>
+</body>
+</html>

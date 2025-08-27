@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Ethio Catalyst</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url("photo40.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #fff9f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: rgba(111, 161, 80, 0.9); /* slight transparency */
+      color: #fff9f0;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-title img {
+      height: 180px;
+      width: auto;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff9f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d6f0c0;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(111, 161, 80, 0.6); /* semi-transparent */
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    .float-img {
+      width: 180px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      margin: 0.5rem 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1.2s ease, transform 1.2s ease;
+    }
+
+    .float-img.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .right { float: right; }
+    .left { float: left; }
+    .last-img { width: 170px !important; margin-top: 10px; }
+
+    footer {
+      clear: both;
+      background-color: rgba(111, 161, 80, 0.9); /* matches header */
+      color: #fff9f0;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      .float-img {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+      }
+
+      .logo-title img {
+        height: 120px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-title">
+      <img src="img2.png" alt="Ethio Catalyst Logo">
+      <h1>Ethio Catalyst</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Ethiopia’s Coffee, Shared Worldwide</h2>
+
+    <p>
+      <img src="photo35.jpg" alt="Coffee Farm" class="float-img right">
+      Established in 2023, <strong>Ethio Catalyst</strong> is a dedicated Ethiopian coffee exporter connecting the birthplace of coffee to buyers across the globe. Built on a passion for quality and authenticity, the company serves as a bridge between local farmers and international markets, ensuring that the unique flavors of Ethiopian coffee are preserved and appreciated worldwide.
+    </p>
+
+    <p>
+      <img src="photo36.jpg" alt="Farmers" class="float-img left">
+      With a strong commitment to excellence, transparency, and long-term partnerships, Ethio Catalyst works hand in hand with producers, cooperatives, and buyers to deliver coffee that reflects Ethiopia’s rich heritage. The company’s mission goes beyond trade — it empowers communities, promotes sustainability, and showcases Ethiopia’s role as a global leader in specialty coffee.
+    </p>
+
+    <p>
+      <img src="photo37.jpg" alt="Coffee Export" class="float-img right last-img">
+      By blending tradition with modern practices, Ethio Catalyst inspires trust and confidence among partners worldwide. Our greatest strength lies in our ability to stay deeply connected — to our farmers, who supply with dedication, and to our buyers, who trust us to deliver consistently. We pride ourselves on offering not only <strong>quality</strong> but also <strong>quantity</strong>, ensuring reliability at every scale of trade. With strong relationships across the supply chain, we stand out as exporters who value integrity, efficiency, and long-term collaboration. Every cup tells a story of hard work, community, and Ethiopia’s unmatched role as the origin of coffee.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ethio Catalyst Coffee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const imgs = document.querySelectorAll('.float-img');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    imgs.forEach(img => observer.observe(img));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerubabel Nahusenay - Ethio Catalyst</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #8bbf7a; /* from indexbest */
+      color: #fff9f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #6fa150; /* header green */
+      color: #fff9f0;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: #fff9f0;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d6f0c0;
+      text-decoration: underline;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #6fa150; /* card background */
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease forwards;
+      color: #fff9f0;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #fff9f0;
+    }
+
+    .info {
+      margin-top: 1rem;
+      background: #8bbf7a; /* lighter section background */
+      padding: 1rem;
+      border-radius: 6px;
+    }
+
+    .info p {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      background-color: #6fa150;
+      color: #fff9f0;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ethio Catalyst</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <img src="photo27.jpg" alt="Portrait of Zerubabel Nahusenay, Logistics Director and Assistant Executive Director at Ethio Catalyst" class="profile-img" />
+    <div class="content">
+      <h2>Zerubabel Nahusenay</h2>
+      <p>Zerubabel is an essential pillar of Ethio Catalyst, bringing expert knowledge in coffee cupping and sampling alongside logistics excellence. His dedication ensures smooth operations and premium quality at every stage of the supply chain.</p>
+
+      <div class="info">
+        <p><strong>Skill:</strong> Licensed Cupper, Sampling Expert</p>
+        <p><strong>Position:</strong> Logistics Director and Assistant Executive Director</p>
+        <p><strong>Experience:</strong> He has been working in the coffee sector since 2022 as a sample expert, assistant executive director, and logistics director. He also has a bachelor degree in Chemical Engineering.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ethio Catalyst Coffee. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
