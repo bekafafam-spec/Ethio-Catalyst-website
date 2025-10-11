@@ -419,7 +419,7 @@
   <section id="contact" class="contact">
     <div class="contact-info">
       <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@ethiocatalysttrade.com">info@ethiocatalysttrade.com</a></p>
+      <p>Email: <a href="mailto:zelalem@ethiocatalysttrade.com">info@ethiocatalysttrade.com</a></p>
       <p>Phone: +251 911 646 608</p>
       <p>Location: Refenti Bldg 2nd floor, Maryam Mazoria, Bole, Addis Ababa, Ethiopia</p>
       <!-- Added image below location -->
@@ -487,3 +487,4 @@
 </body>
 
 </html>
+
